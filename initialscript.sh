@@ -23,7 +23,7 @@ fi
 #Give all scripts righs
 sudo find ~/git/pi_veriumminer/ -name '*.sh' -print0 | xargs -0 sudo chmod +x
 
-#run scripts for pi_vericoin
+#run scripts for pi_veriumminer
 cd ~/git/pi_veriumminer/scripts/pi/
 
 #Run update
@@ -41,6 +41,6 @@ cd ~/git/pi_veriumminer/scripts/pi/
 #Run createdockerfiles
 ./createdockerfiles.sh
 
-#Run docker vericoin
-echo "\e[32mRun docker vericoin\e[0m"
-sudo docker run -d --restart=always --mount source=veriumminer_root_home,target=/root --name veriumminer  veriumminer /root/scripts/startup.sh
+#Run docker veriumminer
+echo "\e[32mRun docker veriumminer\e[0m"
+sudo docker run -d --restart=always --mount source=veriumminer_root_home,target=/root --cpu-shares=128 --name veriumminer  veriumminer /root/scripts/startup.sh
