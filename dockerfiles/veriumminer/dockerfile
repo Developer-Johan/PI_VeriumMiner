@@ -16,7 +16,7 @@ RUN apt-get install -y git \
                  libgmp-dev \
                  zlib1g-dev 
 
-RUN git clone -v git clone https://github.com/fireworm71/veriumMiner ~/git/veriumminer/
+RUN git clone -v https://github.com/fireworm71/veriumMiner ~/git/veriumminer/
 
 RUN cd ~/git/veriumminer/build.sh
 
