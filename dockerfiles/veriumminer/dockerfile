@@ -26,4 +26,4 @@ RUN cd ~/git/veriumminer/ && ./configure CFLAGS= --with-crypto --with-curl
 
 RUN cd ~/git/veriumminer/ && make -j4
 
-RUN cp ~/git/veriumminer/src/cpuminer /usr/bin/
+RUN cp ~/git/veriumminer/cpuminer /usr/bin/
