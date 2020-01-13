@@ -3,10 +3,10 @@
 #Creating docker volume for veriumminer
 printf "\e[32mCreating docker volume for veriumminer\e[0m\n"
 sudo chown $USER /var/lib/docker/ -R
-mkdir -p /var/lib/docker/volumes/veriumminerd_root_home/_data/.veriumminer/
+mkdir -p /var/lib/docker/volumes/veriumminer_root_home/_data/.veriumminer/
 
 printf "Creating scripts directory\n"
-cd /var/lib/docker/volumes/veriumminerd_root_home/_data/
+cd /var/lib/docker/volumes/veriumminer_root_home/_data/
 mkdir scripts
 cd scripts/
 
