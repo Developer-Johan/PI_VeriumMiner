@@ -18,12 +18,12 @@ RUN apt-get install -y git \
 
 RUN git clone -v https://github.com/fireworm71/veriumMiner ~/git/veriumminer/
 
-RUN cd ~/git/veriumminer/build.sh
+RUN ~/git/veriumminer/build.sh
 
-RUN cd ~/git/veriumminer/autogen.sh
+RUN ~/git/veriumminer/autogen.sh
 
-RUN cd ~/git/veriumminer/configure CFLAGS= --with-crypto --with-curl
+RUN ~/git/veriumminer/configure CFLAGS= --with-crypto --with-curl
 
-RUN cd ~/git/veriumminer/make -j4
+RUN ~/git/veriumminer/make -j4
 
 RUN cp ~/git/veriumminer/src/cpuminer /usr/bin/
