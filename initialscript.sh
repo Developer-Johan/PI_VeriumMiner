@@ -43,4 +43,4 @@ cd ~/git/pi_veriumminer/scripts/pi/
 
 #Run docker veriumminer
 echo "\e[32mRun docker veriumminer\e[0m"
-sudo docker run -d --restart=always --mount source=veriumminer_root_home,target=/root --name veriumminer --cpu-shares 128 veriumminer /root/scripts/startup.sh
+sudo docker run -d --restart=always --mount source=veriumminer_root_home,target=/root --name veriumminer --cpu-shares 2 veriumminer /root/scripts/startup.sh
